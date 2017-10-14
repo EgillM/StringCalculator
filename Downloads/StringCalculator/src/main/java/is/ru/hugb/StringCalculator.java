@@ -7,7 +7,7 @@ public class StringCalculator {
 		if(numbers.equals(""))
 			return 0;
 		else {
-			String[] values = numbers.split(",");
+			String[] values = numbers.split("\\n|,");
 			for(int i = 0; i < values.length; i++) {
 				a += Integer.parseInt(values[i]);
 			}
@@ -17,7 +17,7 @@ public class StringCalculator {
 	public static void main(String[] args) {
 		System.out.println(Add(""));
 		System.out.println(Add("1,2,3"));
-		System.out.println(Add("1,2,3,4,5,6,7"));
+		System.out.println(Add("1,2,3,4,5,6\n7"));
 		System.out.println(Add("1"));
 	}
 }
