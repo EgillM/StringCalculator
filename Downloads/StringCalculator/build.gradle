@@ -1,0 +1,11 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = 'is.ru.hugb.StringCalculator'
+
+apply plugin: 'java'
+repositories {
+    mavenCentral()
+}
+dependencies {
+    
+}
