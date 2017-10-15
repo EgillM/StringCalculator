@@ -18,7 +18,7 @@ public class StringCalculator {
 				if(testNumber < 0){
 					negativeNumbers.add(testNumber);
 				}
-				else if(testNumber < 1000)
+				else if(testNumber <= 1000)
 					a += testNumber;
 			}
 			if(negativeNumbers.size() > 0) {
@@ -32,6 +32,7 @@ public class StringCalculator {
 		System.out.println(Add("1,2,3"));
 		System.out.println(Add("1,2,3,4,5,6\n7"));
 		System.out.println(Add("1"));
+		System.out.println(Add("1,2,3,4,1000,5,6"));
 		System.out.println(Add("1,2,3,1234,2,1,2"));
 	}
 }
